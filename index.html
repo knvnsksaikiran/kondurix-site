@@ -46,19 +46,47 @@
           <img src="/mnt/data/8a9eb737-7452-4e7c-92ef-097dbf1fefe1.png" alt="decorative texture" onerror="this.style.display='none'"/>
           <!-- fallback SVG art if image missing -->
           <svg class="hero-svg" viewBox="0 0 600 360" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
-            <defs><linearGradient id="g1"><stop offset="0" stop-color="#64a0ff"/><stop offset="1" stop-color="#2b63d6"/></linearGradient></defs>
-            <g transform="translate(10,10)" stroke="url(#g1)" stroke-width="1.6" fill="none">
-              <path d="M10 80 C80 20, 180 20, 240 70" />
-              <path d="M40 220 C120 160, 220 160, 300 220" />
-              <path d="M80 40 C140 110, 260 110, 340 40" />
-            </g>
-            <g>
-              <circle cx="60" cy="90" r="4.6" fill="#ffffff" opacity="0.95"/>
-              <circle cx="180" cy="60" r="6" fill="#64a0ff" />
-              <circle cx="240" cy="80" r="4.6" fill="#ffffff" opacity="0.95"/>
-              <circle cx="300" cy="220" r="5.5" fill="#2b63d6" />
-            </g>
-          </svg>
+    <defs>
+        <linearGradient id="flowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#4C8DFF" />
+            <stop offset="100%" stop-color="#2356D8" />
+        </linearGradient>
+
+        <style>
+            @keyframes dash {
+                0% { stroke-dashoffset: 600; }
+                100% { stroke-dashoffset: 0; }
+            }
+            @keyframes pulse {
+                0%, 100% { r: 4; opacity: 0.9; }
+                50% { r: 7; opacity: 1; }
+            }
+        </style>
+    </defs>
+
+    <!-- Flow Lines -->
+    <path d="M20 120 C150 40, 300 40, 540 120" 
+          stroke="url(#flowGrad)" stroke-width="2" fill="none"
+          stroke-dasharray="600" stroke-dashoffset="600"
+          style="animation: dash 5s ease-in-out infinite;" />
+
+    <path d="M20 200 C180 260, 320 260, 540 200" 
+          stroke="url(#flowGrad)" stroke-width="2" fill="none"
+          stroke-dasharray="600" stroke-dashoffset="600"
+          style="animation: dash 6s ease-in-out infinite reverse;" />
+
+    <path d="M80 60 C240 140, 360 140, 520 60" 
+          stroke="url(#flowGrad)" stroke-width="1.5" fill="none"
+          stroke-dasharray="600" stroke-dashoffset="600"
+          style="animation: dash 7s ease-in-out infinite;" />
+
+    <!-- Data Nodes -->
+    <circle cx="160" cy="90" r="5" fill="#fff" style="animation: pulse 2.4s infinite;" />
+    <circle cx="340" cy="60" r="5" fill="#4C8DFF" style="animation: pulse 3s infinite;" />
+    <circle cx="420" cy="200" r="5" fill="#fff" style="animation: pulse 2.7s infinite;" />
+    <circle cx="260" cy="220" r="6" fill="#2356D8" style="animation: pulse 3.2s infinite;" />
+</svg>
+
         </div>
       </div>
     </div>
