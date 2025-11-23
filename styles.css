@@ -65,4 +65,11 @@ body{margin:0;font-family:Inter, 'Segoe UI', system-ui, -apple-system, Roboto, A
   .about-grid{grid-template-columns:1fr;}
   .contact-grid{grid-template-columns:1fr;}
   .nav{display:none;}
+
+.hero-svg {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 0 12px rgba(76, 141, 255, 0.3));
+}
+  
 }
