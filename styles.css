@@ -71,5 +71,30 @@ body{margin:0;font-family:Inter, 'Segoe UI', system-ui, -apple-system, Roboto, A
     height: auto;
     filter: drop-shadow(0 0 12px rgba(76, 141, 255, 0.3));
 }
-  
+
+.domain-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.domain-card {
+  text-align: left;
+  padding: 26px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0px 4px 14px rgba(0,0,0,0.07);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.domain-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 10px 24px rgba(0,0,0,0.12);
+}
+
+.domain-icon {
+  font-size: 34px;
+  margin-bottom: 12px;
+}
+
 }
