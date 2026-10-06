@@ -1,29 +1,22 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>KonduriX | Enterprise Data & AI Architecture</title>
-<link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="KonduriX helps teams design enterprise data architecture, Snowflake and cloud data platforms, semantic knowledge foundations, and practical AI POCs." />
+  <title>KonduriX | Enterprise Data Architecture & AI POCs</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 <header class="site-header">
   <div class="container header-inner">
-    <div class="brand">
-      <div class="logo">KX</div>
-      <div class="brand-text">
-        <div class="brand-name">KonduriX Data & AI Solutions</div>
-        <div class="brand-tag">Enterprise Data & AI Architecture</div>
-      </div>
-    </div>
-    <nav class="nav">
-      <a href="#home">Home</a>
-      <a href="#services">Services</a>
-      <a href="#approach">Approach</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-      <a href="#contact" class="btn btn-primary">Get Consultation</a>
+    <a class="brand" href="#home" aria-label="KonduriX home">
+      <img src="assets/KonduriX-Logo.png" alt="KonduriX" class="brand-logo" />
+      <div><div class="brand-name">KonduriX Solutions</div><div class="brand-tag">Data Architecture • AI Foundations • POCs</div></div>
+    </a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#services">Services</a><a href="#engagements">Engagements</a><a href="#solutions">Solutions</a><a href="#approach">Approach</a><a href="#about">About</a>
+      <a href="#contact" class="btn btn-primary">Discuss a Project</a>
     </nav>
   </div>
 </header>
@@ -31,386 +24,94 @@
 <main id="home">
   <section class="hero">
     <div class="container hero-grid">
-      <div class="hero-left">
-        <div class="kicker">Enterprise Data • AI • Architecture</div>
-        <h1>From Enterprise Data to Trusted AI</h1>
-        <p class="hero-sub">We help organizations move from business questions and fragmented data to governed platforms, AI-ready knowledge layers, and production-grade Enterprise AI solutions.</p>
-        <div class="hero-actions">
-          <a href="#contact" class="btn btn-accent">Get a Free Consultation</a>
-          <a href="#portfolio" class="btn btn-ghost">Explore Portfolio</a>
-        </div>
-        <p class="muted">Architecture first. Tools second. Build only after the problem, data, controls and success criteria are understood.</p>
+      <div>
+        <div class="kicker">Architecture-led. Practical. Partner-friendly.</div>
+        <h1>Turn complex enterprise data into a foundation for analytics and AI.</h1>
+        <p class="hero-sub">KonduriX is a specialist data & AI architecture practice helping enterprises, consultancies and delivery partners with data modelling, Snowflake/cloud architecture, semantic foundations, RAG/agentic AI blueprints, and focused POCs.</p>
+        <div class="hero-actions"><a href="#contact" class="btn btn-accent">Discuss Your Requirement</a><a href="#engagements" class="btn btn-ghost dark-ghost">Ways to Work With Us</a></div>
+        <div class="trust-strip"><span>Enterprise Data Modelling</span><span>Snowflake & Cloud</span><span>Canonical / Semantic Models</span><span>RAG & Agentic AI</span></div>
       </div>
-      <div class="hero-right">
-        <!-- Optional user image (will show if present on server) -->
-        <div class="hero-card">
-          <img src="/mnt/data/8a9eb737-7452-4e7c-92ef-097dbf1fefe1.png" alt="decorative texture" onerror="this.style.display='none'"/>
-          <!-- fallback SVG art if image missing -->
-          <svg class="hero-svg" viewBox="0 0 600 360" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-        <linearGradient id="flowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stop-color="#4C8DFF" />
-            <stop offset="100%" stop-color="#2356D8" />
-        </linearGradient>
-
-        <style>
-            @keyframes dash {
-                0% { stroke-dashoffset: 600; }
-                100% { stroke-dashoffset: 0; }
-            }
-            @keyframes pulse {
-                0%, 100% { r: 4; opacity: 0.9; }
-                50% { r: 7; opacity: 1; }
-            }
-        </style>
-    </defs>
-
-    <!-- Flow Lines -->
-    <path d="M20 120 C150 40, 300 40, 540 120" 
-          stroke="url(#flowGrad)" stroke-width="2" fill="none"
-          stroke-dasharray="600" stroke-dashoffset="600"
-          style="animation: dash 5s ease-in-out infinite;" />
-
-    <path d="M20 200 C180 260, 320 260, 540 200" 
-          stroke="url(#flowGrad)" stroke-width="2" fill="none"
-          stroke-dasharray="600" stroke-dashoffset="600"
-          style="animation: dash 6s ease-in-out infinite reverse;" />
-
-    <path d="M80 60 C240 140, 360 140, 520 60" 
-          stroke="url(#flowGrad)" stroke-width="1.5" fill="none"
-          stroke-dasharray="600" stroke-dashoffset="600"
-          style="animation: dash 7s ease-in-out infinite;" />
-
-    <!-- Data Nodes -->
-    <circle cx="160" cy="90" r="5" fill="#fff" style="animation: pulse 2.4s infinite;" />
-    <circle cx="340" cy="60" r="5" fill="#4C8DFF" style="animation: pulse 3s infinite;" />
-    <circle cx="420" cy="200" r="5" fill="#fff" style="animation: pulse 2.7s infinite;" />
-    <circle cx="260" cy="220" r="6" fill="#2356D8" style="animation: pulse 3.2s infinite;" />
-</svg>
-
-        </div>
+      <div class="hero-panel" aria-label="KonduriX delivery flow">
+        <div class="panel-title">From requirement to working proof</div>
+        <div class="flow-item"><b>01</b><span><strong>Understand</strong><small>Business problem, data, constraints</small></span></div>
+        <div class="flow-item"><b>02</b><span><strong>Architect</strong><small>Target model, platform, controls</small></span></div>
+        <div class="flow-item"><b>03</b><span><strong>Validate</strong><small>POC / MVP with clear acceptance criteria</small></span></div>
+        <div class="flow-item"><b>04</b><span><strong>Enable</strong><small>Handover, scale-up or delivery partnership</small></span></div>
       </div>
     </div>
   </section>
 
   <section id="services" class="section">
     <div class="container">
-      <h2>Our Core Expertise</h2>
-      <p class="lead">Enterprise data foundations, analytics and practical AI solutions — designed together as one architecture.</p>
-
-<h3>Domain Expertise</h3>
-<div class="grid domain-grid">
-
-  <article class="card domain-card">
-    <div class="domain-icon">💳</div>
-    <h4>Banking & Financial Services</h4>
-    <p>
-      Customer lifecycle models, transactional pipelines, KYC standardization,
-      risk scoring & fraud intelligence reporting.
-    </p>
-  </article>
-
-  <article class="card domain-card">
-    <div class="domain-icon">🧬</div>
-    <h4>Pharmaceutical & Life Sciences</h4>
-    <p>
-      Clinical data harmonization, SDTM automation, R&D analytics and
-      compliance-driven transformations for global trials.
-    </p>
-  </article>
-
-  <article class="card domain-card">
-    <div class="domain-icon">📦</div>
-    <h4>Consumer Goods (FMCG)</h4>
-    <p>
-      SKU modeling, demand forecasting, distributor/retail integrations,
-      and supply-chain intelligence layers.
-    </p>
-  </article>
-
-  <article class="card domain-card">
-    <div class="domain-icon">🚚</div>
-    <h4>Logistics & Supply Chain</h4>
-    <p>
-      Shipment lifecycle analytics, telemetry ingestion pipelines,
-      warehouse throughput and optimization KPIs.
-    </p>
-  </article>
-
-  <article class="card domain-card">
-    <div class="domain-icon">🎬</div>
-    <h4>Media & Entertainment</h4>
-    <p>
-      Audience segmentation, content performance intelligence,
-      subscription analytics, revenue and marketing insights.
-    </p>
-  </article>
-
-</div>
-
-
-      <h3 style="margin-top:28px;">Data, AI & Architecture Solutions</h3>
-      <div class="grid">
-        <article class="card"><h4>Multi-Cloud Platforms</h4><p>Azure • AWS • GCP • Hybrid integration and modernization.</p></article>
-        <article class="card"><h4>Data Engineering</h4><p>Bronze/Silver/Gold layers, ELT frameworks, CDC, orchestration & quality.</p></article>
-        <article class="card"><h4>Architecture & Streaming</h4><p>Event-driven systems, real-time pipelines, metadata & lineage.</p></article>
-        <article class="card"><h4>Analytics & BI</h4><p>Semantic layers, dashboards, KPI frameworks and governed reporting.</p></article>
-        <article class="card"><h4>Enterprise AI Solutions</h4><p>Enterprise search, RAG, knowledge assistants, copilots, workflow automation and agentic AI grounded in business data.</p></article>
-        <article class="card"><h4>AI-Ready Data & Semantic Layer</h4><p>Canonical models, business semantics, ontologies, metadata and governed knowledge foundations that make enterprise AI trustworthy.</p></article>
-        <article class="card"><h4>AI Architecture & Governance</h4><p>Use-case assessment, logical architecture, model/LLM selection patterns, security, human approvals, evaluation, observability and LLMOps.</p></article>
-        <article class="card"><h4>AI POC & MVP</h4><p>Rapidly validate enterprise AI ideas with measurable POCs and MVPs before committing to full-scale platform investment.</p></article>
+      <div class="eyebrow">What we do</div><h2>Focused services where architecture matters</h2>
+      <p class="lead">Engage KonduriX for a specific architecture problem, a short discovery/assessment, or a focused implementation proof.</p>
+      <div class="grid service-grid">
+        <article class="card"><div class="card-no">01</div><h3>Enterprise Data Architecture & Modelling</h3><p>Conceptual, logical and physical models; canonical models; data products; source-to-target mapping; integration patterns; modelling standards and design reviews.</p><div class="tags"><span>ER/Studio</span><span>PowerDesigner</span><span>SQL</span><span>Governance</span></div></article>
+        <article class="card"><div class="card-no">02</div><h3>Snowflake & Cloud Data Platforms</h3><p>Landing-to-consumption architecture, Bronze/Silver/Gold patterns, ingestion, CDC, security, performance, governance and platform modernization.</p><div class="tags"><span>Snowflake</span><span>AWS</span><span>Azure</span><span>Databricks</span></div></article>
+        <article class="card"><div class="card-no">03</div><h3>AI-Ready Semantic Foundations</h3><p>Business entities, governed definitions, metadata, ontology/knowledge graph patterns and semantic layers that make enterprise information usable by people and AI.</p><div class="tags"><span>Canonical</span><span>Ontology</span><span>Knowledge Graph</span><span>Metadata</span></div></article>
+        <article class="card"><div class="card-no">04</div><h3>Enterprise AI Architecture & POCs</h3><p>Use-case assessment, RAG, enterprise search, copilots, tool-using agents, human approvals, evaluation and observability—validated through narrow POCs before scale.</p><div class="tags"><span>RAG</span><span>Agents</span><span>LLM</span><span>n8n / APIs</span></div></article>
       </div>
     </div>
   </section>
 
-  <section id="approach" class="section approach-section">
+  <section id="engagements" class="section alt">
     <div class="container">
-      <div class="section-eyebrow">Our solutioning thought process</div>
-      <h2>Enterprise AI starts with questions, not tools</h2>
-      <p class="lead">Before choosing an LLM, vector database, cloud service or agent framework, we establish what must be solved, what data can be trusted, what actions AI may take, and how success will be measured.</p>
-
-      <div class="process-flow">
-        <div class="process-step"><span>01</span><h4>Discover</h4><p>Business problem, users, pain points, outcomes and constraints.</p></div>
-        <div class="process-arrow">→</div>
-        <div class="process-step"><span>02</span><h4>Assess Data</h4><p>Sources, ownership, quality, sensitivity, access and freshness.</p></div>
-        <div class="process-arrow">→</div>
-        <div class="process-step"><span>03</span><h4>Define AI Pattern</h4><p>Search, RAG, copilot, workflow automation, agentic AI or ML.</p></div>
-        <div class="process-arrow">→</div>
-        <div class="process-step"><span>04</span><h4>Blueprint</h4><p>Logical architecture, security, governance, integrations and NFRs.</p></div>
-        <div class="process-arrow">→</div>
-        <div class="process-step"><span>05</span><h4>POC / MVP</h4><p>Prove the riskiest assumptions with measurable acceptance criteria.</p></div>
-        <div class="process-arrow">→</div>
-        <div class="process-step"><span>06</span><h4>Productionize</h4><p>Observability, evaluation, guardrails, LLMOps/MLOps, cost and scale.</p></div>
-      </div>
-
-      <div class="two-path-grid">
-        <article class="path-card">
-          <div class="path-label">WITH A CLIENT</div>
-          <h3>Problem-led architecture</h3>
-          <p>Start from a real business problem and existing enterprise landscape. Discovery answers drive the blueprint; the implementation stack is selected only after the target state is clear.</p>
-          <div class="mini-flow">Client Need → Discovery → Data &amp; Risk Assessment → Blueprint → POC → MVP → Production</div>
-        </article>
-        <article class="path-card">
-          <div class="path-label">WITHOUT A CLIENT</div>
-          <h3>Hypothesis-led product build</h3>
-          <p>Choose a repeatable industry problem, define the ideal customer profile and assumptions, then invest in a narrow reusable MVP. Validate demand early before expanding into a full platform.</p>
-          <div class="mini-flow">Market Problem → ICP → Assumptions → Reference Blueprint → Demo/MVP → Pilot Client → Productize</div>
-        </article>
-      </div>
-
-      <div class="question-box">
-        <h3>What we need answers to before implementation</h3>
-        <div class="question-grid">
-          <div><strong>Business</strong><br>Who is the user? What decision or task improves? What is the measurable value?</div>
-          <div><strong>Data</strong><br>Where is the knowledge? Is it structured, unstructured, real-time, governed and usable?</div>
-          <div><strong>AI</strong><br>Does the use case need generation, retrieval, prediction, reasoning, tools or autonomous actions?</div>
-          <div><strong>Security</strong><br>What is sensitive? Who can see what? What actions require human approval?</div>
-          <div><strong>Integration</strong><br>Which operational systems, APIs, files, warehouses or applications must connect?</div>
-          <div><strong>Success</strong><br>How do we evaluate accuracy, latency, cost, adoption, safety and business outcome?</div>
-        </div>
+      <div class="eyebrow">Ways to engage</div><h2>Built for direct clients and delivery partners</h2>
+      <p class="lead">You do not need a large transformation program to start. KonduriX can plug into an existing team or validate a new idea independently.</p>
+      <div class="grid engagement-grid">
+        <article class="engagement"><span>01</span><h3>Architecture Consultation</h3><p>Review a problem, architecture or data model and leave with concrete recommendations, risks and next steps.</p><strong>Best for: 1–2 day advisory needs</strong></article>
+        <article class="engagement"><span>02</span><h3>Design / Blueprint Sprint</h3><p>Translate requirements into target architecture, data models, integration flows, governance controls and a phased implementation plan.</p><strong>Best for: pre-delivery solutioning</strong></article>
+        <article class="engagement"><span>03</span><h3>POC / MVP</h3><p>Build a narrow working proof for data, RAG, semantic or agentic AI use cases with measurable success criteria.</p><strong>Best for: validating before investment</strong></article>
+        <article class="engagement featured"><div class="pill">PARTNER FRIENDLY</div><span>04</span><h3>Subcontract / White-label Support</h3><p>Architecture, modelling, Snowflake/data platform or AI solutioning support for consulting firms and delivery partners that need specialist capacity.</p><strong>Best for: project augmentation & partnerships</strong></article>
       </div>
     </div>
   </section>
 
-  <section id="enterprise-ai" class="section alt">
+  <section id="solutions" class="section">
     <div class="container">
-      <div class="section-eyebrow">Architecture blueprint</div>
-      <h2>A tool-agnostic Enterprise AI reference architecture</h2>
-      <p class="lead">The architecture remains broadly stable even when products and cloud services change.</p>
-      <div class="architecture-stack">
-        <div class="arch-layer"><strong>Experience Layer</strong><span>Web • Mobile • BI • Copilot • APIs</span></div>
-        <div class="arch-down">↓</div>
-        <div class="arch-layer"><strong>AI Orchestration Layer</strong><span>Prompting • Routing • Agents • Tool Calling • Workflow • Human Approval</span></div>
-        <div class="arch-down">↓</div>
-        <div class="arch-layer"><strong>Knowledge &amp; Intelligence Layer</strong><span>LLM / SLM • RAG • Semantic Search • Vector Retrieval • ML Models • Business Rules</span></div>
-        <div class="arch-down">↓</div>
-        <div class="arch-layer"><strong>Enterprise Data &amp; Semantic Layer</strong><span>Canonical Models • Metadata • Ontology • Master Data • Metrics • Data Products</span></div>
-        <div class="arch-down">↓</div>
-        <div class="arch-layer"><strong>Source &amp; Integration Layer</strong><span>Databases • Files • SaaS • APIs • Events • Documents • Operational Systems</span></div>
-        <div class="arch-guardrail">Security • Governance • Privacy • Evaluation • Observability • LLMOps/MLOps • FinOps</div>
+      <div class="eyebrow">Experience & reference solutions</div><h2>Where we can create value quickly</h2>
+      <p class="lead">Our positioning is grounded in enterprise banking and media data architecture experience, with reusable POC patterns for emerging AI use cases.</p>
+      <div class="solution-list">
+        <article><div class="solution-type">ENTERPRISE EXPERIENCE</div><h3>Banking data architecture</h3><p>Regulatory, AML, payments and enterprise data modelling patterns: source analysis, canonicalization, business definitions, traceability and governed provisioning.</p></article>
+        <article><div class="solution-type">ENTERPRISE EXPERIENCE</div><h3>Media enterprise data platforms</h3><p>Layered cloud data architecture, security classification, canonical/semantic modelling, governed data products and cross-platform interoperability patterns.</p></article>
+        <article><div class="solution-type concept">REFERENCE POC</div><h3>Enterprise knowledge assistant</h3><p>Ground enterprise documents and structured data through RAG, access-aware retrieval, citations, evaluation and controlled tool/API integration.</p></article>
+        <article><div class="solution-type concept">REFERENCE POC</div><h3>Commodity / operations AI agents</h3><p>Agent patterns for extracting contract context, retrieving governed knowledge, applying business rules and routing actions through approvals.</p></article>
+        <article><div class="solution-type concept">REFERENCE POC</div><h3>Semantic knowledge layer</h3><p>Connect canonical data models, ontology/knowledge graph concepts and retrieval so analytics and AI use consistent business meaning.</p></article>
+        <article><div class="solution-type concept">EXPLORATION</div><h3>IoT & telemetry architecture</h3><p>Architecture exploration for sensor-driven use cases such as temperature-sensitive shipments, equipment monitoring and alert-oriented operational data.</p></article>
+      </div>
+      <p class="disclaimer">Reference POCs and explorations are solution patterns, not claims of completed client deployments.</p>
+    </div>
+  </section>
+
+  <section id="approach" class="section dark-section">
+    <div class="container">
+      <div class="eyebrow light">How we think</div><h2>Problem first. Data second. AI only where it adds value.</h2>
+      <p class="lead light-text">We avoid selecting an LLM, vector database or agent framework before understanding the business outcome and enterprise constraints.</p>
+      <div class="steps"><div><b>1</b><h3>Discover</h3><p>Users, pain points, decisions, outcomes.</p></div><div><b>2</b><h3>Assess</h3><p>Data, systems, quality, security, ownership.</p></div><div><b>3</b><h3>Design</h3><p>Model, architecture, AI pattern, controls.</p></div><div><b>4</b><h3>Prove</h3><p>POC with measurable acceptance criteria.</p></div><div><b>5</b><h3>Scale</h3><p>Production path, governance, cost, operations.</p></div></div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container about-grid">
+      <div class="about-logo"><img src="assets/KonduriX-Logo.png" alt="KonduriX Solutions logo" /></div>
+      <div><div class="eyebrow">About KonduriX</div><h2>Senior architecture experience, offered in a focused consulting model.</h2>
+        <p>KonduriX is an independent specialist practice built around hands-on enterprise experience in banking and media data environments. The focus is on solving architecture-heavy problems without forcing clients into a large consulting engagement.</p>
+        <p>The practice combines data modelling, cloud data platforms, governance and emerging AI architecture. For larger programs, KonduriX is open to working alongside consulting firms, staffing partners, system integrators and client engineering teams.</p>
+        <div class="capabilities"><span>Data Architect / Modeller</span><span>Snowflake & AWS</span><span>Banking & Media</span><span>Semantic / AI Architecture</span><span>Global remote collaboration</span></div>
       </div>
     </div>
   </section>
 
- <section id="portfolio" class="section alt">
-  <div class="container">
-    <h2>Portfolio & Case Studies</h2>
-    <p class="lead">Examples across enterprise data platforms, analytics and AI-enabled solution patterns.</p>
-
-    <div class="grid portfolio-grid">
-
-      <!-- 1. Banking -->
-      <div class="portfolio-item">
-        <h4>💳 Enterprise Customer Golden Record (Banking)</h4>
-        <p>
-          Unified customer identities across seven banking applications, eliminating duplicates, harmonizing KYC attributes,
-          and establishing a 360° Customer Golden Record. Improved AML/KYC screening accuracy and reduced onboarding
-          validation time while enabling faster regulatory reporting.
-        </p>
-        <span class="tag">Azure • SQL • MDM • Governance</span>
+  <section id="contact" class="section contact-section">
+    <div class="container contact-grid">
+      <div><div class="eyebrow">Start small</div><h2>Have a project, subcontracting need, or POC idea?</h2><p class="lead">Send the requirement directly. A short problem statement, expected deliverable and timeline are enough to start.</p>
+        <div class="contact-actions"><a class="btn btn-accent" href="mailto:saikiran@kondurix.com?subject=KonduriX%20Project%20Inquiry">Email saikiran@kondurix.com</a><button class="btn btn-ghost" id="copyEmail" type="button">Copy Email</button></div><p id="copyStatus" class="copy-status" aria-live="polite"></p>
       </div>
-
-      <!-- 2. Pharma -->
-      <div class="portfolio-item">
-        <h4>🧬 Clinical Trial Data Harmonization (Pharma)</h4>
-        <p>
-          Built automated SDTM conversion pipelines and metadata-driven lineage for Phase II–IV trials across multiple CROs.
-          Delivered audit-ready traceability, standardized global trial datasets, and reduced manual transformation effort.
-        </p>
-        <span class="tag">AWS • Redshift • Glue • SDTM</span>
-      </div>
-
-      <!-- 3. FMCG -->
-      <div class="portfolio-item">
-        <h4>📦 SKU Demand Forecasting Data Hub (FMCG)</h4>
-        <p>
-          Architected a unified SKU, distributor, and retailer demand hub improving forecasting accuracy and reducing stock-outs.
-          Deployed harmonized Silver layer models powering enterprise reporting and supply chain analytics.
-        </p>
-        <span class="tag">Azure Synapse • Power BI • ELT</span>
-      </div>
-
-      <!-- 4. Logistics -->
-      <div class="portfolio-item">
-        <h4>🚚 Shipment Telemetry & Warehouse Analytics (Logistics)</h4>
-        <p>
-          Developed streaming telemetry pipelines integrating GPS, sensor, and operational logistics data. Enabled real-time
-          delay prediction, warehouse throughput insights, and optimized route planning across regions.
-        </p>
-        <span class="tag">Kafka • AWS • Streaming • IoT</span>
-      </div>
-
-      <!-- AI 1 -->
-      <div class="portfolio-item">
-        <h4>🤖 Enterprise Knowledge Assistant (RAG)</h4>
-        <p>
-          Designed a governed RAG pattern that connects enterprise documents, metadata and structured data to an LLM-based assistant.
-          The architecture includes semantic retrieval, access controls, citations, evaluation and observability so answers remain grounded and auditable.
-        </p>
-        <span class="tag">RAG • LLM • Vector Search • Governance</span>
-      </div>
-
-      <!-- AI 2 -->
-      <div class="portfolio-item">
-        <h4>🧠 AI-Ready Canonical & Semantic Knowledge Layer</h4>
-        <p>
-          Defined canonical business entities, relationships, ontology and governed semantic definitions to create a reusable knowledge layer
-          for analytics, enterprise search, copilots and future agentic AI use cases.
-        </p>
-        <span class="tag">Canonical Model • Ontology • Semantic Layer • AI</span>
-      </div>
-
-      <!-- AI 3 -->
-      <div class="portfolio-item">
-        <h4>⚙️ Agentic Workflow Architecture</h4>
-        <p>
-          Created a tool-agnostic architecture for AI agents that can reason over enterprise knowledge, call approved tools and APIs,
-          execute controlled workflows, and route sensitive actions through human approval and policy guardrails.
-        </p>
-        <span class="tag">Agents • Tool Calling • Workflow • Guardrails</span>
-      </div>
-
-      <!-- 5. Media -->
-      <div class="portfolio-item">
-        <h4>🎬 Content Performance & Audience Intelligence (Media)</h4>
-        <p>
-          Standardized subscriber, engagement, and revenue data into a unified analytics layer. Delivered content scoring,
-          churn-prediction signals, and marketing recommendation insights improving customer retention strategies.
-        </p>
-        <span class="tag">GCP • BigQuery • BI • Segmentation</span>
-      </div>
-
-    </div>
-
-    <p style="margin-top:24px;">
-      <a class="btn btn-accent" href="#contact">Request a Similar Project</a>
-    </p>
-  </div>
-</section>
-
-
-  <div id="about" class="about-box" style="padding:28px; border-radius:12px; background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); box-shadow:0 10px 30px rgba(8,18,40,0.06);">
-  <div class="about-grid" style="align-items:center; gap:24px;">
-    <div class="about-photo" style="display:flex; align-items:center; justify-content:center;">
-      <!-- Uploaded logo used as a subtle visual anchor -->
-      <img src="assets/KonduriX-Logo.png" alt="KonduriX Logo" style="width:220px; height:220px; object-fit:contain; border-radius:12px; background:white; padding:12px;" />
-    </div>
-
-    <div class="about-text">
-      <h3 style="margin-top:0; font-size:22px; color:#0c1b3a;">Our story — connecting enterprise data with practical AI</h3>
-
-      <p style="color:#334155; line-height:1.6;">
-        Enterprise AI is only as useful as the data, business context and controls behind it. KonduriX brings data architecture and AI solutioning together: first understanding the business problem, then establishing trusted data and semantic foundations, and finally applying the right AI pattern — from enterprise search and RAG to copilots, automation and agents.
-      </p>
-
-      <p style="color:#334155; line-height:1.6;">
-        We work across the full path from source systems to intelligence: ingestion, modelling, canonical and semantic architecture, governance, analytics, LLM/RAG patterns, AI orchestration and production controls. The goal is not to add AI for its own sake, but to build solutions that are useful, explainable, secure and connected to measurable business outcomes.
-      </p>
-
-      <h4 style="margin:18px 0 8px 0; color:#0c1b3a;">How we work — a simple rhythm</h4>
-      <ul style="color:#475569; line-height:1.6;">
-        <li><strong>Listen first:</strong> we learn where the pain and opportunity actually are — not where the org chart says they might be.</li>
-        <li><strong>Model with domain intent:</strong> we shape data models that reflect how people run the business, not just how systems export rows.</li>
-        <li><strong>Engineer for trust:</strong> lineage, tests, and governance are included by default — trust fuels adoption.</li>
-        <li><strong>Deliver iteratively:</strong> value as early as possible, with a clear path to scale and operate.</li>
-      </ul>
-
-      <p style="margin-top:12px; color:#334155; line-height:1.6;">
-        Our work is measured by outcomes: faster insight cycles, fewer incidents, clear ownership, and dashboards that executives actually use. We partner for the long term — not for the slide deck. If a platform is to survive and matter, it must be useful, observable, and owned.
-      </p>
-
-      <div style="margin-top:18px;">
-        <a href="#contact" class="btn btn-accent" style="text-decoration:none;">Start a conversation</a>
-        <a href="#portfolio" class="btn btn-ghost" style="margin-left:12px; text-decoration:none;">See our work</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-  <section id="contact" class="section alt">
-    <div class="container">
-      <h2>Contact</h2>
-      <div class="contact-grid">
-        <form id="leadForm" class="form">
-          <div id="formMessage" class="message" style="display:none;"></div>
-          <label>Full name<input id="name" name="name" required></label>
-          <label>Email<input id="email" name="email" type="email" required></label>
-          <label>Organization<input id="org" name="org"></label>
-          <label>Project Type
-            <select id="type" name="type" required>
-              <option value="">Select</option>
-              <option>Data Modeling</option>
-              <option>ETL / ELT</option>
-              <option>Cloud Migration</option>
-              <option>BI & Dashboards</option>
-              <option>Enterprise AI / RAG</option>
-              <option>AI Architecture Assessment</option>
-              <option>Canonical / Semantic Modeling</option>
-              <option>Other</option>
-            </select>
-          </label>
-          <label>Project summary<textarea id="message" name="message" rows="5" required></textarea></label>
-          <label>Attach file<input id="file" name="file" type="file"></label>
-          <button type="submit" class="btn btn-accent full">Submit Project Inquiry</button>
-        </form>
-
-        <aside class="contact-aside">
-          <h3>Let's build your next Data & AI solution</h3>
-          <p><strong>Email</strong><br>saikiran@kondurix.com</p>
-          <p><strong>Location</strong><br>India - Supporting global clients</p>
-          <p><a class="btn btn-ghost" href="#">Book a Free 20-minute Call</a></p>
-        </aside>
-      </div>
+      <aside class="contact-card"><h3>Good fit for</h3><ul><li>Data architecture / modelling assignments</li><li>Snowflake or cloud data platform design</li><li>Canonical / semantic modelling</li><li>RAG, knowledge or agentic AI POCs</li><li>Subcontract / white-label architecture support</li><li>Short discovery and solution blueprint engagements</li></ul><p><strong>Based in India • Supporting global engagements</strong></p></aside>
     </div>
   </section>
 </main>
-
-<footer class="site-footer">
-  <div class="container">
-    © 2026 KonduriX Data & AI Solutions — Enterprise Data & AI Architecture
-  </div>
-</footer>
-
+<footer class="site-footer"><div class="container">© 2026 KonduriX Solutions · Enterprise Data Architecture & AI POCs</div></footer>
 <script src="script.js"></script>
 </body>
 </html>
